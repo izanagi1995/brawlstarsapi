@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "brawlstars-api"
-VERSION = "1.0.1"
+VERSION = "1.2.0"
 # To install the library, run the following
 #
 # python setup.py install
@@ -22,13 +22,14 @@ VERSION = "1.0.1"
 # http://pypi.python.org/pypi/setuptools
 
 REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
+REQUIRES.append("aiohttp")
 
 setup(
     name=NAME,
     version=VERSION,
     description="Brawl Stars API",
-    author_email="nsurleraux@gmail.com",
-    url="https://github.com/izanagi1995/brawlstarsapi",
+    author_email="",
+    url="",
     keywords=["Swagger", "Brawl Stars API"],
     install_requires=REQUIRES,
     packages=find_packages(),

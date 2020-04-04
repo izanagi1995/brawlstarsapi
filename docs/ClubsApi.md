@@ -1,4 +1,4 @@
-# swagger_client.ClubsApi
+# brawlstars_api.ClubsApi
 
 All URIs are relative to *https://api.brawlstars.com/v1*
 
@@ -18,18 +18,18 @@ Get information about a single clan by club tag. Club tags can be found in game.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import brawlstars_api
+from brawlstars_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: JWT
-configuration = swagger_client.Configuration()
+configuration = brawlstars_api.Configuration()
 configuration.api_key['authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClubsApi(swagger_client.ApiClient(configuration))
+api_instance = brawlstars_api.ClubsApi(brawlstars_api.ApiClient(configuration))
 club_tag = 'club_tag_example' # str | Tag of the club.
 
 try:
@@ -72,18 +72,18 @@ List club members.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import brawlstars_api
+from brawlstars_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: JWT
-configuration = swagger_client.Configuration()
+configuration = brawlstars_api.Configuration()
 configuration.api_key['authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ClubsApi(swagger_client.ApiClient(configuration))
+api_instance = brawlstars_api.ClubsApi(brawlstars_api.ApiClient(configuration))
 club_tag = 'club_tag_example' # str | Tag of the club.
 before = 'before_example' # str | Return only items that occur before this marker. Before marker can be found from the response, inside the 'paging' property. Note that only after or before can be specified for a request, not both.  (optional)
 after = 'after_example' # str | Return only items that occur after this marker. Before marker can be found from the response, inside the 'paging' property. Note that only after or before can be specified for a request, not both.  (optional)

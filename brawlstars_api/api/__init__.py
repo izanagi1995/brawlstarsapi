@@ -3,7 +3,7 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
-from swagger_client.api.brawlers_api import BrawlersApi
-from swagger_client.api.clubs_api import ClubsApi
-from swagger_client.api.players_api import PlayersApi
-from swagger_client.api.rankings_api import RankingsApi
+from brawlstars_api.api.brawlers_api import BrawlersApi
+from brawlstars_api.api.clubs_api import ClubsApi
+from brawlstars_api.api.players_api import PlayersApi
+from brawlstars_api.api.rankings_api import RankingsApi

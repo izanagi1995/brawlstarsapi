@@ -1,4 +1,4 @@
-# swagger_client.PlayersApi
+# brawlstars_api.PlayersApi
 
 All URIs are relative to *https://api.brawlstars.com/v1*
 
@@ -18,18 +18,18 @@ Get list of recent battle results for a player. NOTE: It may take up to 30 minut
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import brawlstars_api
+from brawlstars_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: JWT
-configuration = swagger_client.Configuration()
+configuration = brawlstars_api.Configuration()
 configuration.api_key['authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi(swagger_client.ApiClient(configuration))
+api_instance = brawlstars_api.PlayersApi(brawlstars_api.ApiClient(configuration))
 player_tag = 'player_tag_example' # str | Tag of the player.
 
 try:
@@ -72,18 +72,18 @@ Get information about a single player by player tag. Player tags can be found ei
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import brawlstars_api
+from brawlstars_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: JWT
-configuration = swagger_client.Configuration()
+configuration = brawlstars_api.Configuration()
 configuration.api_key['authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi(swagger_client.ApiClient(configuration))
+api_instance = brawlstars_api.PlayersApi(brawlstars_api.ApiClient(configuration))
 player_tag = 'player_tag_example' # str | Tag of the player.
 
 try:
